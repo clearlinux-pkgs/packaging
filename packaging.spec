@@ -6,13 +6,14 @@
 #
 Name     : packaging
 Version  : 16.8
-Release  : 4
+Release  : 5
 URL      : https://pypi.debian.net/packaging/packaging-16.8.tar.gz
 Source0  : https://pypi.debian.net/packaging/packaging-16.8.tar.gz
 Source99 : https://pypi.debian.net/packaging/packaging-16.8.tar.gz.asc
 Summary  : Core utilities for Python packages
 Group    : Development/Tools
 License  : Apache-2.0 BSD-2-Clause
+Requires: packaging-legacypython
 Requires: packaging-python
 Requires: pyparsing
 Requires: six
@@ -48,9 +49,18 @@ BuildRequires : virtualenv
         
         You can also join ``#pypa`` on Freenode to ask questions or get involved.
 
+%package legacypython
+Summary: legacypython components for the packaging package.
+Group: Default
+
+%description legacypython
+legacypython components for the packaging package.
+
+
 %package python
 Summary: python components for the packaging package.
 Group: Default
+Requires: packaging-legacypython
 
 %description python
 python components for the packaging package.
@@ -64,12 +74,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1503125483
+export SOURCE_DATE_EPOCH=1505008086
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1503125483
+export SOURCE_DATE_EPOCH=1505008086
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -80,7 +90,10 @@ echo ----[ mark ]----
 %files
 %defattr(-,root,root,-)
 
-%files python
+%files legacypython
 %defattr(-,root,root,-)
 /usr/lib/python2*/*
+
+%files python
+%defattr(-,root,root,-)
 /usr/lib/python3*/*

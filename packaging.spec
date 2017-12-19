@@ -6,7 +6,7 @@
 #
 Name     : packaging
 Version  : 16.8
-Release  : 9
+Release  : 10
 URL      : https://pypi.debian.net/packaging/packaging-16.8.tar.gz
 Source0  : https://pypi.debian.net/packaging/packaging-16.8.tar.gz
 Source99 : https://pypi.debian.net/packaging/packaging-16.8.tar.gz.asc

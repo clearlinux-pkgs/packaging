@@ -4,13 +4,12 @@
 #
 Name     : packaging
 Version  : 17.1
-Release  : 13
+Release  : 14
 URL      : https://pypi.debian.net/packaging/packaging-17.1.tar.gz
 Source0  : https://pypi.debian.net/packaging/packaging-17.1.tar.gz
 Summary  : Core utilities for Python packages
 Group    : Development/Tools
 License  : Apache-2.0 BSD-2-Clause
-Requires: packaging-legacypython
 Requires: packaging-python3
 Requires: packaging-python
 Requires: pyparsing
@@ -47,15 +46,6 @@ BuildRequires : virtualenv
         
         You can also join ``#pypa`` on Freenode to ask questions or get involved.
 
-%package legacypython
-Summary: legacypython components for the packaging package.
-Group: Default
-Requires: python-core
-
-%description legacypython
-legacypython components for the packaging package.
-
-
 %package python
 Summary: python components for the packaging package.
 Group: Default
@@ -82,25 +72,18 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1520380523
-python2 setup.py build -b py2
+export SOURCE_DATE_EPOCH=1523293264
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1520380523
 rm -rf %{buildroot}
-python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
-python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
+python3 -tt setup.py build -b py3 install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
 
 %files
 %defattr(-,root,root,-)
-
-%files legacypython
-%defattr(-,root,root,-)
-/usr/lib/python2*/*
 
 %files python
 %defattr(-,root,root,-)

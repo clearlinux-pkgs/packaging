@@ -20,7 +20,7 @@ BuildRequires : pluggy
 BuildRequires : py-python
 BuildRequires : pyparsing
 BuildRequires : pytest
-BuildRequires : python-dev
+
 BuildRequires : python3-dev
 BuildRequires : setuptools
 BuildRequires : six

@@ -4,7 +4,7 @@
 #
 Name     : packaging
 Version  : 17.1
-Release  : 20
+Release  : 21
 URL      : https://pypi.debian.net/packaging/packaging-17.1.tar.gz
 Source0  : https://pypi.debian.net/packaging/packaging-17.1.tar.gz
 Summary  : Core utilities for Python packages

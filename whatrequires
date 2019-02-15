@@ -2,3 +2,4 @@
 Sphinx
 cryptography
 deprecation
+pytest-sugar

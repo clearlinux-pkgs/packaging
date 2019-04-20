@@ -4,7 +4,7 @@
 #
 Name     : packaging
 Version  : 19.0
-Release  : 29
+Release  : 30
 URL      : https://files.pythonhosted.org/packages/16/51/d72654dbbaa4a4ffbf7cb0ecd7d12222979e0a660bf3f42acc47550bf098/packaging-19.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/16/51/d72654dbbaa4a4ffbf7cb0ecd7d12222979e0a660bf3f42acc47550bf098/packaging-19.0.tar.gz
 Summary  : Core utilities for Python packages

@@ -1,5 +1,5 @@
 PKG_NAME := packaging
-URL = https://files.pythonhosted.org/packages/8b/3a/5bfe64c319be5775ed7ea3bc1a8e5667e0d57a740cc0498ce03e032eaf93/packaging-19.1.tar.gz
+URL = https://files.pythonhosted.org/packages/5a/2f/449ded84226d0e2fda8da9252e5ee7731bdf14cd338f622dfcd9934e0377/packaging-19.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common

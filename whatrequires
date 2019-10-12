@@ -2,10 +2,9 @@
 Sphinx
 bokeh
 cryptography
-deprecated-Sphinx
-deprecated-cryptography
 deprecation
 pytest
 pytest-sugar
+python-zstandard
 scikit-build
 wheelhouse-uploader

@@ -4,7 +4,7 @@
 #
 Name     : packaging
 Version  : 19.2
-Release  : 33
+Release  : 34
 URL      : https://files.pythonhosted.org/packages/5a/2f/449ded84226d0e2fda8da9252e5ee7731bdf14cd338f622dfcd9934e0377/packaging-19.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5a/2f/449ded84226d0e2fda8da9252e5ee7731bdf14cd338f622dfcd9934e0377/packaging-19.2.tar.gz
 Summary  : Core utilities for Python packages

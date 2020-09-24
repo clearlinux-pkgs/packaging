@@ -4,7 +4,7 @@
 #
 Name     : packaging
 Version  : 20.4
-Release  : 42
+Release  : 43
 URL      : https://files.pythonhosted.org/packages/55/fd/fc1aca9cf51ed2f2c11748fa797370027babd82f87829c7a8e6dbe720145/packaging-20.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/55/fd/fc1aca9cf51ed2f2c11748fa797370027babd82f87829c7a8e6dbe720145/packaging-20.4.tar.gz
 Summary  : Core utilities for Python packages

@@ -8,6 +8,4 @@ docker-py
 pytest
 pytest-sugar
 python-zstandard
-scikit-build
 tox
-wheelhouse-uploader

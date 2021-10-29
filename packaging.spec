@@ -4,7 +4,7 @@
 #
 Name     : packaging
 Version  : 21.0
-Release  : 56
+Release  : 57
 URL      : https://files.pythonhosted.org/packages/df/86/aef78bab3afd461faecf9955a6501c4999933a48394e90f03cd512aad844/packaging-21.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/df/86/aef78bab3afd461faecf9955a6501c4999933a48394e90f03cd512aad844/packaging-21.0.tar.gz
 Summary  : Core utilities for Python packages

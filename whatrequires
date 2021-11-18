@@ -19,6 +19,7 @@ jupyterlab
 jupyterlab_server
 pytest
 pytest-sugar
+python-install
 python-zstandard
 resolvelib
 setuptools_scm
